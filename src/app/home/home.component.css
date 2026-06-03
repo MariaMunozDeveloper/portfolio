@@ -1,0 +1,79 @@
+.hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+}
+.hero-left {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 4rem 3rem;
+    border-right: 1px solid var(--line);
+}
+.hero-eyebrow {
+    font-size: 11px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s 0.2s both;
+}
+.hero-name {
+    font-family: var(--font-serif);
+    font-size: clamp(52px, 7vw, 88px);
+    font-weight: 300; line-height: 1.05;
+    letter-spacing: -1px; margin-bottom: 2rem;
+    animation: fadeUp 0.8s 0.4s both;
+}
+.hero-name em { font-style: italic; color: var(--rose); }
+.hero-desc {
+    font-size: 13px; color: var(--muted);
+    max-width: 360px; margin-bottom: 2.5rem;
+    animation: fadeUp 0.8s 0.6s both;
+}
+.hero-cta {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.8s both;
+}
+.hero-right {
+    display: flex; flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem 3rem;
+    position: relative; overflow: hidden;
+}
+.hero-decoration {
+    position: absolute; top: 6rem; right: 2rem;
+    width: 280px; height: 280px; border-radius: 50%;
+    background: var(--rose-light); opacity: 0.5;
+    animation: float 6s ease-in-out infinite;
+}
+.hero-decoration-2 {
+    position: absolute; bottom: 8rem; left: 2rem;
+    width: 180px; height: 180px; border-radius: 50%;
+    background: var(--sage-light); opacity: 0.4;
+    animation: float 8s ease-in-out infinite reverse;
+}
+.hero-stats {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1px; border: 1px solid var(--line);
+    position: relative; z-index: 1;
+    animation: fadeUp 0.8s 1s both;
+}
+.stat-box {
+    padding: 1.5rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+.stat-box:nth-child(2),
+.stat-box:nth-child(4) { border-right: none; }
+.stat-box:nth-child(3),
+.stat-box:nth-child(4) { border-bottom: none; }
+.stat-num {
+    font-family: var(--font-serif);
+    font-size: 36px; font-weight: 300;
+    color: var(--ink); line-height: 1; margin-bottom: 4px;
+}
+.stat-label { font-size: 11px; color: var(--muted); letter-spacing: 1px; }
+
+@media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 5rem 1.5rem 2rem; border-right: none; border-bottom: 1px solid var(--line); }
+    .hero-right { padding: 2rem 1.5rem; }
+}

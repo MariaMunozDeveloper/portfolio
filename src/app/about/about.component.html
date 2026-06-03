@@ -1,0 +1,30 @@
+<section class="about">
+    <div class="about-text" appReveal>
+        <div class="section-header">
+            <span class="section-num">01</span>
+            <h2 class="section-title">About me</h2>
+            <div class="section-line"></div>
+        </div>
+        <p>I'm a junior developer with a DAW degree and real-world experience in a
+            <strong>fintech environment</strong>, where I worked on Angular frontends
+            and Kotlin/Spring Boot backends using hexagonal architecture.</p>
+        <p>I built <strong>Cookee</strong> from scratch — a fullstack social recipe
+            network — to prove to myself I could own an entire product. Spoiler: I could.</p>
+        <p>I'm looking for a team where I can keep growing, ship real things, and
+            eventually become the developer I know I can be.</p>
+    </div>
+
+    <div appReveal>
+        <div class="section-header stack-header">
+            <span class="section-num">Stack</span>
+        </div>
+        <div class="stack-grid">
+            @for (item of stack; track item.name) {
+                <div class="stack-item">
+                    <div class="stack-name">{{ item.name }}</div>
+                    <div class="stack-type">{{ item.type }}</div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="projects">
+    <div class="section-header" appReveal>
+        <span class="section-num">02</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+        @for (p of projects; track p.name) {
+            <div class="project-card" [class.wide]="p.wide" appReveal>
+                <div class="project-tag">{{ p.tag }}</div>
+                <h3 class="project-name">{{ p.name }}</h3>
+                <p class="project-desc">{{ p.desc }}</p>
+                <div class="project-tech">
+                    @for (t of p.tech; track t) {
+                        <span class="tech-pill">{{ t }}</span>
+                    }
+                </div>
+                @if (p.link) {
+                    <a [href]="p.link" class="project-link" target="_blank">View on GitHub</a>
+                }
+            </div>
+        }
+    </div>
+</section>

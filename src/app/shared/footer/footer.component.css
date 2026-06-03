@@ -1,0 +1,9 @@
+footer {
+    border-top: 1px solid var(--line);
+    padding: 1.5rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; color: var(--muted); letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
+}

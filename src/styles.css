@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #f7f3ee;
+  --ink: #1a1814;
+  --muted: #7a746c;
+  --rose: #c4747a;
+  --rose-light: #f0dede;
+  --sage: #7a9e8a;
+  --sage-light: #deeae4;
+  --line: rgba(26,24,20,0.12);
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  cursor: none;
+}
+
+a { cursor: none; }
+
+/* cursor */
+.cursor {
+  width: 8px; height: 8px;
+  background: var(--rose);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+.cursor-ring {
+  width: 32px; height: 32px;
+  border: 1px solid var(--rose);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  transition: width 0.2s, height 0.2s, opacity 0.2s;
+}
+
+/* shared section styles */
+.section-num {
+  font-size: 11px; letter-spacing: 2px;
+  color: var(--rose); text-transform: uppercase;
+}
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+.section-header {
+  display: flex; align-items: center; gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.section-line {
+  flex: 1; height: 1px;
+  background: var(--line);
+}
+
+.btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+  cursor: none;
+  border: none;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--cream);
+  border: 1px solid var(--ink);
+}
+.btn-primary:hover { background: var(--rose); border-color: var(--rose); }
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.btn-secondary:hover { border-color: var(--ink); }
+
+/* reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%       { transform: translateY(-20px) scale(1.04); }
+}
