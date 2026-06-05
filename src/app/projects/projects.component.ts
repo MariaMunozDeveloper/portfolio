@@ -20,23 +20,23 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      tag: 'Fullstack · Featured',
+      tag: 'Fullstack · Destacado',
       name: 'Cookee',
-      desc: 'Social recipe-sharing network built end-to-end. Users can post, discover, and save recipes. Includes image upload, JWT auth, and a custom REST API.',
+      desc: 'Red social para compartir recetas construida fullstack desde cero. Los usuarios pueden publicar, descubrir y guardar recetas. Incluye subida de imágenes, autenticación JWT y una API REST propia.',
       tech: ['Angular', 'Node.js', 'MongoDB Atlas', 'Cloudinary', 'JWT', 'Railway'],
       link: 'https://github.com/MariaMunozDeveloper'
     },
     {
-      tag: 'Experience · Fintech',
-      name: 'Fintech internship',
-      desc: 'Junior developer at a fintech startup. Worked on an Angular dashboard with a Kotlin/Spring Boot backend — shipping features in a real production codebase with hexagonal architecture.',
+      tag: 'Experiencia · Fintech',
+      name: 'Prácticas en Fintech',
+      desc: 'Desarrolladora Fullstack junior. Trabajé en un dashboard Angular con backend Kotlin/Spring Boot — entregando funcionalidades en un proyecto real de producción con arquitectura hexagonal.',
       tech: ['Angular', 'Kotlin', 'Spring Boot', 'RxJS', 'MongoDB']
     },
     {
-      tag: 'This site · Meta',
-      name: 'This portfolio',
-      desc: 'Built with Angular 17 standalone components, lazy-loaded routes, a custom reveal directive with IntersectionObserver, and zero UI libraries. Because sometimes the best way to prove you know the framework is to just use it.',
-      tech: ['Angular 17', 'Standalone Components', 'CSS3', 'Lazy Loading', 'Custom Directives'],
+      tag: 'Este sitio · Meta',
+      name: 'Este portfolio',
+      desc: 'Construido con Angular 17 standalone components, rutas con lazy loading, una directiva personalizada con IntersectionObserver y cero librerías de UI. Porque a veces la mejor forma de demostrar que sabes Angular es usarlo.',
+      tech: ['Angular 17', 'Standalone Components', 'CSS3', 'Lazy Loading', 'Directivas'],
       link: 'https://github.com/MariaMunozDeveloper',
       wide: true
     }
