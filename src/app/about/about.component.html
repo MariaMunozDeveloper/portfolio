@@ -13,6 +13,29 @@
             Spoiler: pude.</p>
         <p>Busco un equipo donde seguir creciendo, enviar cosas reales a producción y
             convertirme en la desarrolladora que sé que puedo ser.</p>
+
+        <div class="about-actions">
+            <button class="btn btn-secondary" (click)="showCourses = !showCourses">
+                {{ showCourses ? 'Ocultar cursos' : 'Ver cursos' }}
+            </button>
+            <button class="btn btn-secondary" (click)="showLetter = true">
+                Carta de recomendación
+            </button>
+        </div>
+
+        @if (showCourses) {
+        <div class="courses-list">
+            @for (c of courses; track c.name) {
+            <div class="course-item">
+                <div class="course-info">
+                    <span class="course-name">{{ c.name }}</span>
+                    <span class="course-skill">{{ c.skill }}</span>
+                </div>
+                <span class="course-date">{{ c.date }}</span>
+            </div>
+            }
+        </div>
+        }
     </div>
 
     <div appReveal>
@@ -21,11 +44,20 @@
         </div>
         <div class="stack-grid">
             @for (item of stack; track item.name) {
-                <div class="stack-item">
-                    <div class="stack-name">{{ item.name }}</div>
-                    <div class="stack-type">{{ item.type }}</div>
-                </div>
+            <div class="stack-item">
+                <div class="stack-name">{{ item.name }}</div>
+                <div class="stack-type">{{ item.type }}</div>
+            </div>
             }
         </div>
     </div>
 </section>
+
+@if (showLetter) {
+<div class="modal-overlay" (click)="showLetter = false">
+    <div class="modal" (click)="$event.stopPropagation()">
+        <button class="modal-close" (click)="showLetter = false">✕</button>
+        <iframe [src]="letterUrl" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</div>
+}
