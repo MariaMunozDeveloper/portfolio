@@ -51,6 +51,31 @@
             }
         </div>
     </div>
+
+    <div appReveal>
+        <div class="section-header">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Lo que dicen de mí</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="testimonials">
+            @for (t of testimonials; track t.name) {
+            <div class="testimonial-card">
+                <p class="testimonial-text">"{{ t.text }}"</p>
+                <div class="testimonial-author">
+                    <span class="author-name">{{ t.name }}</span>
+                    <span class="author-role">{{ t.role }}</span>
+                </div>
+            </div>
+            }
+            <a href="https://www.linkedin.com/in/maria-munoz-ferrer/details/recommendations/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="testimonials-link">
+                Ver más recomendaciones en LinkedIn →
+            </a>
+        </div>
+    </div>
 </section>
 
 @if (showLetter) {

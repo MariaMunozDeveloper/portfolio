@@ -33,6 +33,8 @@ export class AboutComponent {
   }
 
   courses: Course[] = [
+    { name: 'Spring Data JPA y Hibernate: Persistencia de Datos con Java', date: 'jul. 2026', skill: 'Java, Spring Boot'},
+    { name: 'Microservicios y APIs REST con Spring Boot, OAuth2 y Docker', date: 'jun. 2026', skill: 'Spring Boot, OAuth'},
     { name: 'Ultimate GIT: gestiona tus equipos y trabaja en equipo', date: 'Jun. 2026', skill: 'Git' },
     { name: 'Angular: De cero a experto', date: 'Jun. 2026', skill: 'Angular' },
     { name: 'Aprende MongoDB desde cero', date: 'Mar. 2026', skill: 'MongoDB' },
@@ -46,6 +48,9 @@ export class AboutComponent {
     { name: 'MongoDB', type: 'Database' },
     { name: 'Spring Boot', type: 'Backend' },
     { name: 'Kotlin', type: 'Language' },
+    { name: 'Hibernate / JPA', type: 'Backend' },
+    { name: 'Docker', type: 'Tooling' },
+    { name: 'OAuth2', type: 'Backend' },
     { name: 'HTML + CSS', type: 'Frontend' },
     { name: 'Git', type: 'Tooling' },
   ];
