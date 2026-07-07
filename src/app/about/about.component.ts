@@ -66,11 +66,6 @@ export class AboutComponent {
       name: 'Miguel Ángel Guillamón Carrasco',
       role: 'Ingeniero de software en Epigram Technologies',
       text: 'María se incorporó a un proyecto con ocho años de desarrollo a sus espaldas, con una base de código "legacy" importante y una gran complejidad, tanto técnica como funcional. Desde el primer momento destacó por el entusiasmo con el que afrontó ese reto y por la rapidez con la que fue capaz de entender el proyecto y empezar a aportar valor. Tiene una gran capacidad de aprendizaje, se adapta con facilidad a nuevos entornos y trabaja con mucha autonomía y atención al detalle. Si tuviera que destacar una cualidad por encima del resto, sería su interés por comprender el proyecto en su conjunto y entender el valor de negocio detrás de cada desarrollo. No se limita a completar las tareas asignadas, sino que siempre busca entender el "por qué" de las decisiones, una actitud que no es habitual encontrar en perfiles junior y que, en mi experiencia, marca una gran diferencia en su evolución profesional.'
-    },
-    {
-      name: 'Álex Requena Flaquer',
-      role: 'Desarrollador web fullstack',
-      text: 'Tuve la oportunidad de supervisar a María durante su periodo de prácticas en Epigram Technologies, y puedo decir que es una desarrolladora con muchísimo futuro. Desde el primer momento mostró una actitud excelente, con muchas ganas de aprender y una gran predisposición para entender en profundidad tanto las tareas que se le asignaban como las explicaciones que recibía. Destacaría especialmente su curiosidad, su capacidad de adaptación y su interés constante por mejorar. María no se limita a una única tecnología o área concreta. Ya fuera trabajando en frontend, backend, con un framework u otro, siempre afrontaba cada reto con motivación, implicación y voluntad de aprender. Esa mentalidad abierta, junto con su buena actitud y capacidad de trabajo, la convierten en una profesional con un gran potencial. Sin duda, recomiendo a María para cualquier equipo que valore el compromiso, la curiosidad técnica y las ganas de crecer.'
-    },
+    }
   ];
 }
