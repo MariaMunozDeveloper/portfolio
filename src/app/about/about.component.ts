@@ -63,8 +63,8 @@ export class AboutComponent {
 
   testimonials: Testimonial[] = [
     {
-      name: 'Miguel Ángel Guillamón Carrasco',
-      role: 'Ingeniero de software en Epigram Technologies',
+      name: 'Miguel Ángel Guillamón Carrasco. ',
+      role: 'Ingeniero de software en Epigram Technologies.',
       text: 'María se incorporó a un proyecto con ocho años de desarrollo a sus espaldas, con una base de código "legacy" importante y una gran complejidad, tanto técnica como funcional. Desde el primer momento destacó por el entusiasmo con el que afrontó ese reto y por la rapidez con la que fue capaz de entender el proyecto y empezar a aportar valor. Tiene una gran capacidad de aprendizaje, se adapta con facilidad a nuevos entornos y trabaja con mucha autonomía y atención al detalle. Si tuviera que destacar una cualidad por encima del resto, sería su interés por comprender el proyecto en su conjunto y entender el valor de negocio detrás de cada desarrollo. No se limita a completar las tareas asignadas, sino que siempre busca entender el "por qué" de las decisiones, una actitud que no es habitual encontrar en perfiles junior y que, en mi experiencia, marca una gran diferencia en su evolución profesional.'
     }
   ];
