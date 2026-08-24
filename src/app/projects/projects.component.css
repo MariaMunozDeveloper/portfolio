@@ -62,6 +62,12 @@
 .project-link:hover { color: var(--rose); }
 .project-link::after { content: '→'; }
 
+.project-link-demo {
+    margin-left: 1rem;
+    color: var(--rose);
+}
+.project-link-demo:hover { color: var(--cream); }
+
 @media (max-width: 768px) {
     .projects { padding: 6rem 1.5rem 3rem; }
     .projects-grid { grid-template-columns: 1fr; }

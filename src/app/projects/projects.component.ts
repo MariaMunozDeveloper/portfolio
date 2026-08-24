@@ -7,6 +7,7 @@ interface Project {
   desc: string;
   tech: string[];
   link?: string;
+  demo?: string;
   wide?: boolean;
 }
 
@@ -24,7 +25,8 @@ export class ProjectsComponent {
       name: 'Cookee',
       desc: 'Red social para compartir recetas construida fullstack desde cero. Los usuarios pueden publicar, descubrir y guardar recetas. Incluye subida de imágenes, autenticación JWT y una API REST propia.',
       tech: ['Angular', 'Node.js', 'MongoDB Atlas', 'Cloudinary', 'JWT', 'Railway'],
-      link: 'https://github.com/MariaMunozDeveloper'
+      link: 'https://github.com/MariaMunozDeveloper',
+      demo: 'https://cookee-front-remoto.vercel.app/'
     },
     {
       tag: 'Experiencia · Fintech',

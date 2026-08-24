@@ -19,6 +19,9 @@
                 @if (p.link) {
                     <a [href]="p.link" class="project-link" target="_blank">Ver en GitHub</a>
                 }
+                @if (p.demo) {
+                <a [href]="p.demo" class="project-link project-link-demo" target="_blank">Ver demo</a>
+                }
             </div>
         }
     </div>
