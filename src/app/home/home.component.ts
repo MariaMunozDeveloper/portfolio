@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import { RouterLink } from '@angular/router';
-import {VisitCounterService} from "../visit-counter.service";
 import {CommonModule} from "@angular/common";
 
 @Component({
@@ -10,14 +9,6 @@ import {CommonModule} from "@angular/common";
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnInit {
-  visits = 0;
+export class HomeComponent  {
 
-  constructor(private visitCounter: VisitCounterService) {}
-
-  ngOnInit() {
-    this.visitCounter.getAndIncrementVisits().subscribe(count => {
-      this.visits = count;
-    });
-  }
 }
