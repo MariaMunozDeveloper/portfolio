@@ -7,6 +7,7 @@ interface Project {
   desc: string;
   tech: string[];
   link?: string;
+  linkLabel?: string;
   demo?: string;
   wide?: boolean;
 }
@@ -27,6 +28,14 @@ export class ProjectsComponent {
       tech: ['Angular', 'Node.js', 'MongoDB Atlas', 'Cloudinary', 'JWT', 'Railway'],
       link: 'https://github.com/MariaMunozDeveloper',
       demo: 'https://cookee-front-remoto.vercel.app/'
+    },
+    {
+      tag: 'Fullstack · En desarrollo',
+      name: 'PompaHo',
+      desc: 'Tienda online para mi propia marca de velas artesanales y wax melts. Monorepo con frontend Angular y backend Spring Boot sobre PostgreSQL, con arquitectura hexagonal. Autenticación con Spring Security y JWT, con login funcionando de extremo a extremo. Carrito y pagos pendientes.',
+      tech: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL', 'Spring Security', 'JWT', 'Arquitectura hexagonal'],
+      link: 'https://pompaho.com',
+      linkLabel: 'Ver sitio'
     },
     {
       tag: 'Experiencia · Fintech',
