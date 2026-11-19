@@ -32,7 +32,7 @@ export class ProjectsComponent {
     {
       tag: 'Fullstack · En desarrollo',
       name: 'PompaHo',
-      desc: 'Tienda online para mi propia marca de velas artesanales y wax melts. Monorepo con frontend Angular y backend Spring Boot sobre PostgreSQL, con arquitectura hexagonal. Autenticación con Spring Security y JWT, con login funcionando de extremo a extremo. Carrito y pagos pendientes.',
+      desc: 'Tienda online con frontend Angular y backend Spring Boot sobre PostgreSQL, con arquitectura hexagonal (puertos y adaptadores). Autenticación con Spring Security y JWT, y frontend conectado de extremo a extremo. Carrito y pagos pendientes.',
       tech: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL', 'Spring Security', 'JWT', 'Arquitectura hexagonal'],
       link: 'https://pompaho.com',
       linkLabel: 'Ver sitio'
